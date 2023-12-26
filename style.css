@@ -1,0 +1,696 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  width: auto;
+  height: auto;
+  background-color: black;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+nav {
+  position: fixed;
+  width: 100%;
+  height: 50px;
+  top: 0;
+  display: block;
+  z-index: 1;
+  background-color: transparent;
+  backdrop-filter: blur(5px);
+}
+
+nav img {
+  height: 100%;
+  margin-left: 0px;
+}
+
+.navagation {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.searchBar {
+  width: 280px;
+  height: 60%;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+.searchBar input {
+  background-color: transparent;
+  color: white;
+  width: 100%;
+  height: 100%;
+  border: none;
+  outline: 2px solid grey;
+  outline-offset: -2px;
+  border-radius: 30px;
+  padding-left: 9px;
+}
+
+.searchBar input::placeholder {
+  color: white;
+  opacity: 0.8;
+}
+
+.searchButton {
+  background-color: transparent;
+  border: 2px solid grey;
+  outline: none;
+  position: absolute;
+  right: 0;
+  background-color: rgba(204, 37, 37, 1);
+  color: white;
+  font-weight: bold;
+  height: 100%;
+  width: 30%;
+  border-radius: 30px;
+}
+
+.searchButton:active {
+  background-color: rgba(204, 37, 37, .8);
+}
+
+ul li {
+  display: inline;
+  margin: 20px;
+  list-style: none;
+}
+
+ul li a {
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 20px;
+  color: white;
+}
+
+ul li a:hover {
+  opacity: 0.6;
+}
+
+.sign-in-button {
+  width: 100px;
+  height: 30px;
+  background-color: rgba(204, 37, 37, 1);
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  top: 10px;
+  right: 20px;
+  font-weight: bold;
+  color: white;
+}
+
+.sign-in-button:hover {
+  background-color: rgba(204, 37, 37, .8);
+}
+
+.sign-in-button:active {
+  background-color: rgba(204, 37, 37, .5)
+}
+/* ---------------------- */
+.sign_up_box {
+  width: 400px;
+  height: 100vh;
+  position: fixed;
+  background-color: transparent;
+  backdrop-filter: blur(20px);
+  z-index: 1;
+  right: -460px;
+  transition: 0.5s;
+  padding: 0 30px 0 30px;
+}
+
+.sign_up_box.open {
+  right: 0;
+}
+
+form {
+  height: 100%;
+  width: 100%;
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  align-items: center;
+}
+
+.cross i {
+  position: absolute;
+  right: 0;
+  top: 20px;
+  color: rgba(255, 255, 255, 1);
+}
+
+.cross i:hover {
+  color: rgb(255, 255, 255, 0.8);
+}
+
+.cross i:active {
+  color: rgb(255, 255, 255, 0.5);
+}
+
+.note {
+  color: #fff;
+  margin-top: 15px;
+}
+
+.sign-in {
+  color: white;
+  margin-top: 25px;
+}
+
+.input-box {
+  color: white;
+  width: 100%;
+  height: 40px;
+  border: none;
+  margin-top: 25px;
+  outline: none;
+  position: relative;
+  border-bottom: 2px solid white;
+}
+
+.input-box input {
+  color: #fff;
+  width: 100%;
+  height: 100%;
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+
+.input-box input:focus~label,
+.input-box input:valid~label {
+  top: -5px;
+}
+
+.input-box label {
+  position: absolute;
+  color: white;
+  left: 10px;
+  top: 50%;
+  transform: translate(0, -50%);
+  transition: .5s;
+}
+
+.input-box i {
+  position: absolute;
+  color: black;
+  right: 10px;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+
+#eye {
+  right: 40px;
+  color: white;
+}
+
+.rmandfp {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 10px;
+  color: #fff;
+}
+
+.rmandfp label input {
+  accent-color: #fff;
+  margin-right: 5px;
+}
+
+.rmandfp a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.rmandfp a:hover {
+  text-decoration: underline;
+}
+
+.sign-in-but {
+  background-color: rgba(204, 37, 37, 1);
+  font-size: 15px;
+  border: none;
+  outline: none;
+  width: 100%;
+  height: 40px;
+  margin-top: 50px;
+  border-radius: 20px;
+  font-weight: bold;
+}
+
+.sign-in-but:hover {
+  background-color: rgb(204, 37, 37, 0.8);
+}
+
+.sign-in-but:active {
+  background-color: rgba(204, 37, 37, .5)
+}
+
+.other-option {
+  background-color: transparent;
+  outline: 3px solid white;
+  color: #fff;
+  width: 100%;
+  height: 40px;
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+}
+.other-option i {
+  margin-right: 10px;
+}
+
+/* --------------------- */
+.main {
+  height: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.wrapper {
+  width: 100%;
+  height: 605px;
+  background-image: url(img/background.jpg);
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+.linear-gradient {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, .95), rgba(0, 0, 0, 0.1) );
+}
+
+.text-box {
+  width: 500px;
+  height: 300px;
+  padding: 20px;
+  margin-left: 90px;
+  color: white;
+}
+
+.text-box h1 {
+  font-family: Roboto;
+  margin-top: 30px;position: relative;
+  font-size: 50px;
+}
+
+.text-box p {
+  margin-top: 30px;
+  font-size: 20px;
+}
+
+.text-box button {
+  width: 140px;
+  height: 50px;
+  background-color: rgba(219, 219, 54, 1);
+  border: none;
+  outline: none;
+  border-radius: 25px;
+  top: 10px;
+  right: 20px;
+  font-size: 19px;
+  margin-top: 30px;
+  color: black;
+  font-weight: 900;
+}
+
+.text-box button:hover {
+  background-color: rgba(219, 219, 54, .9);
+}
+
+.text-box button:active {
+  background-color: rgba(219, 219, 54, .7);
+}
+/* wrapper1 end */
+
+/* wrapper2 start */
+/* image container 1 start *************************/
+.wrapper2 {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.image-container, .image-container2, .image-container3, .image-container4 {
+  width: auto;
+  height: 320px;
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  position: relative;
+}
+
+.imgConHeader {
+  color: white;
+  position: absolute;
+  top: 10px;
+  left: 20px;
+}
+
+.year {
+  position: absolute;
+  background-color: black;
+  color: white;
+  padding: 5px;
+  border-radius: 0 0 12px 0;
+  left: 0;
+  top: 0;
+}
+
+.image-container .image {
+  height: 280px;
+  width: 190px;
+  position: relative;
+  background-image: url(img/Paw\ Patrol\ the\ mighty\ movie.jpg);
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center;
+  background-size: cover;
+  transition: 0.5s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.image-container .image:nth-child(2) {
+  background-image: url(img/Oppenheimer.jpg);
+}
+
+.image-container .image:nth-child(3) {
+  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkzaDpjUkXlmuDW2gFn833Zh0FpYz0_OjRNK9pXaDxpwD14dio);
+}
+
+.image-container .image:nth-child(4) {
+  background-image: url(img/Barbie.jpg);
+}
+
+.image-container .image:nth-child(5) {
+  background-image: url(img/The\ Little\ Mermaid.jpg);
+}
+
+.image-container .image:nth-child(6) {
+  background-image: url(https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSKyyG0gEIeyF9tBbO4rt1SBSmKlPJjB1l-70w9IuRn5kSmRpe-);
+}
+
+/* wrapper2-accessories */
+.play-button {
+  width: 50%;
+  position: absolute;
+  margin-bottom: 130px;
+  opacity: 0;
+  transition: 0.8s ease;
+}
+
+.image:hover .play-button {
+  opacity: 1;
+}
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.65);
+  width: 100%;
+  height: 0;
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  overflow: hidden;
+  transition: .8s ease;
+  color: white;
+}
+
+.image:hover .overlay {
+  height: 50%;
+}
+
+.imdbRatingPlugin {
+  margin-bottom: 90px;
+}
+
+.nwatch {
+  height: 40px;
+  width: 150px;
+  margin-bottom: 15px;
+  font-size: 20px;
+  font-weight: bold;
+  background-color: rgb(238, 238, 68);
+  outline: none;
+  border: none;
+  border-radius: 5px;
+}
+/* wrapper2 accessories end */
+/* image-container 1 end ******************/
+
+/* img-container2 start ***********************/
+/* h3 element is in container selection and some other as well*/
+.image-container2 .image {
+  height: 280px;
+  width: 190px;
+  position: relative;
+  background-image: url(img/Paw\ Patrol\ The\ Movie.jpg);
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center;
+  background-size: cover;
+  transition: 0.5s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.image-container2 .image:nth-child(2) {
+  background-image: url(img/Frozen.jpg);
+}
+
+.image-container2 .image:nth-child(3) {
+  background-image: url(img/Frozen2.jpg);
+}
+
+.image-container2 .image:nth-child(4) {
+  background-image: url(img/Luck.jpg);
+}
+
+.image-container2 .image:nth-child(5) {
+  background-image: url(img/Rio.jpg);
+}
+
+.image-container2 .image:nth-child(6) {
+  background-image: url(img/Rio2.jpg);
+}
+/* image container 2 end ***************************/
+
+/* image container 3 start ***************************/
+/* other elements selector in container 3 are writed in image container 1 */
+.image-container3 .image {
+  height: 280px;
+  width: 190px;
+  position: relative;
+  background-image: url(https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR2Yw8L2X2fviY5juCEcr6_M2lMMG-VLS9wdVLe8nP260_Nwv8S);
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center;
+  background-size: cover;
+  transition: 0.5s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.image-container3 .image:nth-child(2) {
+  background-image: url(https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR1xJWK3jVtcCpLAxKsBGwStCFdIV6zy-VoGCGvbRUKJtSyQTDD);
+}
+
+.image-container3 .image:nth-child(3) {
+  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCDcGpDxCGf_pJH8keTvac2JNwbGZwvIJeTvO0NK55QgBB3giJ);
+}
+
+.image-container3 .image:nth-child(4) {
+  background-image: url(https://upload.wikimedia.org/wikipedia/en/9/95/Paul_blart_mall_cop_film.jpg);
+}
+
+.image-container3 .image:nth-child(5) {
+  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjTlNeUI3LXIwfa1Cv5nG6pc0s0jKpMmFosFeZFi60fZfiUHvV);
+}
+
+.image-container3 .image:nth-child(6) {
+  background-image: url(https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSI7uHbs5tWgho9KDgxJwIC-rg-E64T5u82DLCqm5xIw0y-438w);
+}
+/* image container 3 end ****************************/
+
+/* image container 4 start *******************************/
+/* h3 elements and other element selecter in image container 4 are writed in image container 1 */
+.image-container4 .image {
+  height: 280px;
+  width: 190px;
+  position: relative;
+  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQ4S_tXosI-zIZ9tt0U57U_nkeSSKcQIw3Ciblf2CAvQRjrDDY);
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center;
+  background-size: cover;
+  transition: 0.5s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.image-container4 .image:nth-child(2) {
+  background-image: url(https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTWvvPK60BsJyAR-Yf9X4VWUc4T98aZmiwXl3Ovdzkb_8p_J41Z);
+}
+
+.image-container4 .image:nth-child(3) {
+  background-image: url(https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS33DWHodvlDR_SOCQyYyqrb9Td8hvufc3zYCnnAD4PkBX4W7dF);
+}
+
+.image-container4 .image:nth-child(4) {
+  background-image: url(https://movies.universalpictures.com/media/fstx-montage1sheet2-rgb-1-64108e93e63dd-1.jpg);
+}
+
+.image-container4 .image:nth-child(5) {
+  background-image: url(https://pbs.twimg.com/media/EDEsh0gU4AUTO3P?format=jpg&name=900x900);
+}
+
+.image-container4 .image:nth-child(6) {
+  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEn11oH4R10SaxbSRONHRiG6e6RZ4CCdrKCUImkwqVDqLOhpIw);
+}
+/* wrapper2 end *****************/
+
+/* wrapper3 start ******************/
+.wrapper3 {
+  width: 100%;
+  height: 204px;
+  background-color: black;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+}
+
+.infoContainer1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  flex: 2;
+  background-color: black;
+}
+
+.lg {
+  width: 200px;
+}
+
+.iconBox {
+  color: white;
+  text-align: center;
+}
+
+.iconBox i {
+  margin: 9px;
+  cursor: pointer;
+}
+/* ------------------------- */
+.infoContainer2, .infoContainer3, .infoContainer4 {
+  color: white;
+  flex: 1;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.infoContainer2 h4, .infoContainer3 h4, .infoContainer4 h4 {
+  cursor: pointer;
+}
+
+.infoContainer2 h4:hover, .infoContainer3 h4:hover, .infoContainer4 h4:hover {
+  opacity: 0.6;
+}
+
+.infoContainer5 {
+  color: white;
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.bt-email-box {
+  height: 30px;
+  flex: 2;
+  border: 2px solid gray;
+  padding-left: 10px;
+  border-radius: 5px;
+}
+
+.subut {
+  flex: 1;
+  background-color: rgba(204, 37, 37, 1);
+  margin-left: 3px;
+  height: 100%;
+  color: white;
+  font-weight: bold;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+}
+
+.subut:hover {
+  background-color: rgba(204, 37, 37, .8);
+}
+
+.subut:active {
+  background-color: rgba(204, 37, 37, .5);
+}
+
+.watermark {
+  width: 100%;
+  height: 15px;
+  position: absolute;
+  bottom: 9px;
+  right: 0;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  font-size: 13px;
+}
+
+.watermark p {
+  margin-right: 10px;
+}

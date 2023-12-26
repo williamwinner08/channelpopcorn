@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Channel Popcorn</title>
+  <link rel="stylesheet" href="style.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/x-icon" href="img/Channel-Popcorn-Logo.png">
+</head>
+<body>
+  <nav>
+    <div class="navagation">
+
+      <img src="img/Channel-Popcorn-Logo.png" alt="logo">
+
+      <div class="searchBar">
+
+        <input type="text" name="MovieName" placeholder="Enter Movie Name" required >
+
+        <button class="searchButton">
+          search
+        </button>
+
+      </div>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Movie</a></li>
+        <li><a href="#">Series</a></li>
+        <li><a href="#">Coming Soon</a></li>
+        <li><a href="#">Latest Movies</a></li>
+        <li><a href="#">Contact us</a></li>
+      </ul>
+      <button id="sign-in-button" class="sign-in-button">Sign in</button>
+    </div>
+  </nav>
+
+  <!-- sing up form --------------------------->
+  <div class="sign_up_box">
+    <form action="#">
+
+      <div class="cross">
+        <i class='bx bxs-x-circle'></i>
+      </div>
+
+      <h1 class="sign-in">Sign in</h1>
+
+      <h3 class="note">Watch Unlimited Movies by signing up!!</h3>
+
+      <div class="input-box">
+
+        <input type="text" required>
+
+        <label>Username</label>
+
+        <i class='bx bxs-user' style="color: #fff;"></i>
+
+      </div>
+
+      <div class="input-box">
+
+        <input type="text" required >
+
+        <label>Email</label>
+
+        <i class='bx bxs-envelope' style="color: #fff;"></i>
+
+      </div>
+
+      <div class="input-box">
+
+        <input id="myInput" type="password" required >
+
+        <label>Password</label>
+
+        <i id="eye" class='bx bxs-low-vision'></i>
+
+
+        <i class='bx bxs-lock-alt' style="color: #fff;"></i>
+
+      </div>
+
+      <div class="rmandfp">
+        <label><input type="checkbox">Remember me</label>
+        <a href="#">Forgot password?</a>
+      </div>
+
+      <button class="sign-in-but">Sign in</button>
+
+      <div class="other-option">
+        <i class='bx bxl-google'></i>
+        Sign up with Facebook
+      </div>
+
+      <div class="other-option">
+        <i class='bx bxl-facebook-circle' ></i>
+        Sign up with Facebook
+      </div>
+
+    </form>
+  </div>
+
+  <div class="main">
+    <!-- wrapper start ------------------------------------------------------------------------------------->
+    <div class="wrapper">
+      <div class="linear-gradient">
+        <div class="text-box">
+          <h1>Free Movies to Watch,<br>Anytime Anywhere.</h1>
+          <p>The search is over! Let Plex help you find the perfect movie to watch tonight for free.</p>
+          <button id="wp1-sg-but">Sign in</button>
+        </div>
+      </div>
+    </div>
+    <!-- Wrapper2 start -------------------------------------------------------->
+    <div class="wrapper2">
+      <div class="image-container">
+
+        <h3 class="imgConHeader">Latest Movies</h3>
+
+        <!-- oppenheimer ---------------------------------->
+        <div class="image">
+
+          <span class="year"><h4>2023</h4></span>
+
+          <img class="play-button" src="img/play-button.jpg" alt="play-button">
+
+          <div class="overlay">
+            <span class="imdbRatingPlugin" data-user="ur160114602" data-title="tt15398776" data-style="p1">
+              <a href="https://www.imdb.com/title/tt15398776/?ref_=plg_rt_1" target="_blank">
+                <img src="https://ia.media-imdb.com/images/G/01/imdb/plugins/rating/images/imdb_46x22.png" alt="PAW Patrol: The Mighty Movie (2023) on IMDb" />
+              </a>
+            </span>
+        
+            <button class="nwatch">
+              Watch
+            </button>
+          </div>
+        </div>
+
+        <!-- Family Switch --------------------------------->
+        <div class="image">
+
+          <span class="year"><h4>2023</h4></span>
+
+          <img class="play-button" src="img/play-button.jpg" alt="play-button">
+
+          <div class="overlay">
+            <span class="imdbRatingPlugin" data-user="ur160114602" data-title="tt14227048" data-style="p1">
+              <a href="https://www.imdb.com/title/tt14227048/?ref_=plg_rt_1" target="_blank">
+                <img src="https://ia.media-imdb.com/images/G/01/imdb/plugins/rating/images/imdb_46x22.png" alt="PAW Patrol: The Mighty Movie (2023) on IMDb" />
+              </a>
+            </span>
+        
+            <button class="nwatch">
+              Watch
+            </button>
+          </div>
+        </div>
+
+        <!-- Barbie -------------------------------------->
+        <div class="image">
+
+          <span class="year"><h4>2023</h4></span>
+
+          <img class="play-button" src="img/play-button.jpg" alt="play-button">
+
+          <div class="overlay">
+            <span class="imdbRatingPlugin" data-user="ur160114602" data-title="tt1517268" data-style="p1">
+              <a href="https://www.imdb.com/title/tt1517268/?ref_=plg_rt_1" target="_blank">
+                <img src="https://ia.media-imdb.com/images/G/01/imdb/plugins/rating/images/imdb_46x22.png" alt="PAW Patrol: The Mighty Movie (2023) on IMDb" />
+              </a>
+            </span>
+        
+            <button class="nwatch">
+              Watch
+            </button>
+          </div>
+        </div>
+        <!-- The Little Mermaid --------------------------->
+        <div class="image">
+
+          <span class="year"><h4>2023</h4></span>
+
+          <img class="play-button" src="img/play-button.jpg" alt="play-button">
+
+          <div class="overlay">
+            <span class="imdbRatingPlugin" data-user="ur160114602" data-title="tt5971474" data-style="p1">
+              <a href="https://www.imdb.com/title/tt5971474/?ref_=plg_rt_1" target="_blank">
+                <img src="https://ia.media-imdb.com/images/G/01/imdb/plugins/rating/images/imdb_46x22.png" alt="PAW Patrol: The Mighty Movie (2023) on IMDb" />
+              </a>
+            </span>
+        
+            <button class="nwatch">
+              Watch
+            </button>
+          </div>
+        </div>
+        <!-- Taylor Swift: The Eras Tour ---------------------->
+        <div class="image">
+
+          <span class="year"><h4>2023</h4></span>
+
+          <img class="play-button" src="img/play-button.jpg" alt="play-button">
+
+          <div class="overlay">
+            <span class="imdbRatingPlugin" data-user="ur160114602" data-title="tt28814949" data-style="p1">
+              <a href="https://www.imdb.com/title/tt28814949/?ref_=plg_rt_1" target="_blank">
+                <img src="https://ia.media-imdb.com/images/G/01/imdb/plugins/rating/images/imdb_46x22.png" alt="PAW Patrol: The Mighty Movie (2023) on IMDb" />
+              </a>
+            </span>
+        
+            <button class="nwatch">
+              Watch
+            </button>
+          </div>
+        </div>
+        <!-- The Paw Patrol the Mighty Movie --------------->
+        <div class="image">
+
+          <span class="year"><h4>2023</h4></span>
+
+          <img class="play-button" src="img/play-button.jpg" alt="play-button">
+
+          <div class="overlay">
+            <span class="imdbRatingPlugin" data-user="ur160114602" data-title="tt15837338" data-style="p1">
+              <a href="https://www.imdb.com/title/tt15837338/?ref_=plg_rt_1" target="_blank">
+                <img src="https://ia.media-imdb.com/images/G/01/imdb/plugins/rating/images/imdb_46x22.png" alt="PAW Patrol: The Mighty Movie (2023) on IMDb" />
+              </a>
+            </span>
+        
+            <button class="nwatch">
+              Watch
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- img-container2 start -------------------------------------------------------->
+      <div class="image-container2">
+        <h3 class="imgConHeader">Animation</h3>
+        <!-- Frozen ------------------------------->
+        <div class="image">
+
+          <span class="year"><h4>2013</h4></span>
+
+          <img class="play-button" src="img/play-button.jpg" alt="play-button">
+
+          <div class="overlay">
+            <span class="imdbRatingPlugin" data-user="ur160114602" data-title="tt2294629" data-style="p1">
+              <a href="https://www.imdb.com/title/tt2294629/?ref_=plg_rt_1" target="_blank">
+                <img src="https://ia.media-imdb.com/images/G/01/imdb/plugins/rating/images/imdb_46x22.png" alt="PAW Patrol: The Mighty Movie (2023) on IMDb" />
+              </a>
+            </span>
+        
+            <button class="nwatch">
+              Watch
+            </button>
+          </div>
+        </div>
+
+        <!-- Frozen 2 ------------------------------------>
+        <div class="image">
+
+          <span class="year"><h4>2019</h4></span>
+
+          <img class="play-button" src="img/play-button.jpg" alt="play-button">
+
+          <div class="overlay">
+            <span class="imdbRatingPlugin" data-user="ur160114602" data-title="tt4520988" data-style="p1">
+              <a href="https://www.imdb.com/title/tt4520988/?ref_=plg_rt_1" target="_blank">
+                <img src="https://ia.media-imdb.com/images/G/01/imdb/plugins/rating/images/imdb_46x22.png" alt="PAW Patrol: The Mighty Movie (2023) on IMDb" />
+              </a>
+            </span>
+        
+            <button class="nwatch">
+              Watch
+            </button>
+          </div>
+        </div>
+        <!-- Luck ------------------------------------------------>
+        <div class="image">
+
+          <span class="year"><h4>2022</h4></span>
+
+          <img class="play-button" src="img/play-button.jpg" alt="play-button">
+
+          <div class="overlay">
+            <span class="imdbRatingPlugin" data-user="ur160114602" data-title="tt7214954" data-style="p1">
+              <a href="https://www.imdb.com/title/tt7214954/?ref_=plg_rt_1" target="_blank">
+                <img src="https://ia.media-imdb.com/images/G/01/imdb/plugins/rating/images/imdb_46x22.png" alt="PAW Patrol: The Mighty Movie (2023) on IMDb" />
+              </a>
+            </span>
+        
+            <button class="nwatch">
+              Watch
+            </button>
+          </div>
+        </div>
+        <!-- Rio ------------------------------------->
+        <div class="image">
+
+          <span class="year"><h4>2011</h4></span>
+
+          <img class="play-button" src="img/play-button.jpg" alt="play-button">
+
+          <div class="overlay">
+            <span class="imdbRatingPlugin" data-user="ur160114602" data-title="tt1436562" data-style="p1">
+              <a href="https://www.imdb.com/title/tt1436562/?ref_=plg_rt_1" target="_blank">
+                <img src="https://ia.media-imdb.com/images/G/01/imdb/plugins/rating/images/imdb_46x22.png" alt="PAW Patrol: The Mighty Movie (2023) on IMDb" />
+              </a>
+            </span>
+        
+            <button class="nwatch">
+              Watch
+            </button>
+          </div>
+        </div>
+        <!-- Rio 2 ----------------------------------------------->
+        <div class="image">
+
+          <span class="year"><h4>2014</h4></span>
+
+          <img class="play-button" src="img/play-button.jpg" alt="play-button">
+
+          <div class="overlay">
+            <span class="imdbRatingPlugin" data-user="ur160114602" data-title="tt2357291" data-style="p1">
+              <a href="https://www.imdb.com/title/tt2357291/?ref_=plg_rt_1" target="_blank">
+                <img src="https://ia.media-imdb.com/images/G/01/imdb/plugins/rating/images/imdb_46x22.png" alt="PAW Patrol: The Mighty Movie (2023) on IMDb" />
+              </a>
+            </span>
+        
+            <button class="nwatch">
+              Watch
+            </button>
+          </div>
+        </div>
+        <!-- Paw Patrol The Movie -->
+        <div class="image">
+
+          <span class="year"><h4>2021</h4></span>
+
+          <img class="play-button" src="img/play-button.jpg" alt="play-button">
+
+          <div class="overlay">
+            <span class="imdbRatingPlugin" data-user="ur160114602" data-title="tt11832046" data-style="p1">
+              <a href="https://www.imdb.com/title/tt11832046/?ref_=plg_rt_1" target="_blank">
+                <img src="https://ia.media-imdb.com/images/G/01/imdb/plugins/rating/images/imdb_46x22.png" alt="PAW Patrol: The Mighty Movie (2023) on IMDb" />
+              </a>
+            </span>
+        
+            <button class="nwatch">
+              Watch
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- img-container3 start -------------------------------------------------------->
+      <div class="image-container3">
+        <h3 class="imgConHeader">Comedy</h3>
+        <!-- Central Entellgence ---------------------------------------->
+        <div class="image">
+
+          <span class="year"><h4>2016</h4></span>
+
+          <img class="play-button" src="img/play-button.jpg" alt="play-button">
+
+          <div class="overlay">
+            <span class="imdbRatingPlugin" data-user="ur160114602" data-title="tt1489889" data-style="p1">
+              <a href="https://www.imdb.com/title/tt1489889/?ref_=plg_rt_1" target="_blank">
+                <img src="https://ia.media-imdb.com/images/G/01/imdb/plugins/rating/images/imdb_46x22.png" alt="PAW Patrol: The Mighty Movie (2023) on IMDb" />
+              </a>
+            </span>
+        
+            <button class="nwatch">
+              Watch
+            </button>
+          </div>
+        </div>
+        <!-- Crush ------------------------------------------------------------>
+        <div class="image">
+
+          <span class="year"><h4>2022</h4></span>
+
+          <img class="play-button" src="img/play-button.jpg" alt="play-button">
+
+          <div class="overlay">
+            <span class="imdbRatingPlugin" data-user="ur160114602" data-title="tt15096128" data-style="p1">
+              <a href="https://www.imdb.com/title/tt15096128/?ref_=plg_rt_1" target="_blank">
+                <img src="https://ia.media-imdb.com/images/G/01/imdb/plugins/rating/images/imdb_46x22.png" alt="PAW Patrol: The Mighty Movie (2023) on IMDb" />
+              </a>
+            </span>
+        
+            <button class="nwatch">
+              Watch
+            </button>
+          </div>
+        </div>
+        <!-- Paul Blart Mall Cop --------------------------------------------------------->
+        <div class="image">
+
+          <span class="year"><h4>2009</h4></span>
+
+          <img class="play-button" src="img/play-button.jpg" alt="play-button">
+
+          <div class="overlay">
+            <span class="imdbRatingPlugin" data-user="ur160114602" data-title="tt1114740" data-style="p1">
+              <a href="https://www.imdb.com/title/tt1114740/?ref_=plg_rt_1" target="_blank">
+                <img src="https://ia.media-imdb.com/images/G/01/imdb/plugins/rating/images/imdb_46x22.png" alt="PAW Patrol: The Mighty Movie (2023) on IMDb" />
+              </a>
+            </span>
+        
+            <button class="nwatch">
+              Watch
+            </button>
+          </div>
+        </div>
+        <!-- The One and Only Ivan ------------------------------------------------------------->
+        <div class="image">
+
+          <span class="year"><h4>2020</h4></span>
+
+          <img class="play-button" src="img/play-button.jpg" alt="play-button">
+
+          <div class="overlay">
+            <span class="imdbRatingPlugin" data-user="ur160114602" data-title="tt3661394" data-style="p1">
+              <a href="https://www.imdb.com/title/tt3661394/?ref_=plg_rt_1" target="_blank">
+                <img src="https://ia.media-imdb.com/images/G/01/imdb/plugins/rating/images/imdb_46x22.png" alt="PAW Patrol: The Mighty Movie (2023) on IMDb" />
+              </a>
+            </span>
+        
+            <button class="nwatch">
+              Watch
+            </button>
+          </div>
+        </div>
+        <!-- Aladin ---------------------------------------------------------------------->
+        <div class="image">
+
+          <span class="year"><h4>2019</h4></span>
+
+          <img class="play-button" src="img/play-button.jpg" alt="play-button">
+
+          <div class="overlay">
+            <span class="imdbRatingPlugin" data-user="ur160114602" data-title="tt6139732" data-style="p1">
+              <a href="https://www.imdb.com/title/tt6139732/?ref_=plg_rt_1" target="_blank">
+                <img src="https://ia.media-imdb.com/images/G/01/imdb/plugins/rating/images/imdb_46x22.png" alt="PAW Patrol: The Mighty Movie (2023) on IMDb" />
+              </a>
+            </span>
+        
+            <button class="nwatch">
+              Watch
+            </button>
+          </div>
+        </div>
+        <!-- a Dog's Purpose ----------------------------------------------------------->
+        <div class="image">
+
+          <span class="year"><h4>2017</h4></span>
+
+          <img class="play-button" src="img/play-button.jpg" alt="play-button">
+
+          <div class="overlay">
+            <span class="imdbRatingPlugin" data-user="ur160114602" data-title="tt1753383" data-style="p1">
+              <a href="https://www.imdb.com/title/tt1753383/?ref_=plg_rt_1" target="_blank">
+                <img src="https://ia.media-imdb.com/images/G/01/imdb/plugins/rating/images/imdb_46x22.png" alt="PAW Patrol: The Mighty Movie (2023) on IMDb" />
+              </a>
+            </span>
+        
+            <button class="nwatch">
+              Watch
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- img-container4 start -------------------------------------------------------->
+      <div class="image-container4">
+        <h3 class="imgConHeader">Comedy</h3>
+        <!-- We are the Millers ---------------------------------------->
+        <div class="image">
+
+          <span class="year"><h4>2013</h4></span>
+
+          <img class="play-button" src="img/play-button.jpg" alt="play-button">
+
+          <div class="overlay">
+            <span class="imdbRatingPlugin" data-user="ur160114602" data-title="tt1723121" data-style="p1">
+              <a href="https://www.imdb.com/title/tt1723121/?ref_=plg_rt_1" target="_blank">
+                <img src="https://ia.media-imdb.com/images/G/01/imdb/plugins/rating/images/imdb_46x22.png" alt="PAW Patrol: The Mighty Movie (2023) on IMDb" />
+              </a>
+            </span>
+        
+            <button class="nwatch">
+              Watch
+            </button>
+          </div>
+        </div>
+        <!-- John Wick Chracter 4 ------------------------------------------------------------>
+        <div class="image">
+
+          <span class="year"><h4>2023</h4></span>
+
+          <img class="play-button" src="img/play-button.jpg" alt="play-button">
+
+          <div class="overlay">
+            <span class="imdbRatingPlugin" data-user="ur160114602" data-title="tt10366206" data-style="p1">
+              <a href="https://www.imdb.com/title/tt10366206/?ref_=plg_rt_1" target="_blank">
+                <img src="https://ia.media-imdb.com/images/G/01/imdb/plugins/rating/images/imdb_46x22.png" alt="PAW Patrol: The Mighty Movie (2023) on IMDb" />
+              </a>
+            </span>
+        
+            <button class="nwatch">
+              Watch
+            </button>
+          </div>
+        </div>
+        <!-- Fast X --------------------------------------------------------->
+        <div class="image">
+
+          <span class="year"><h4>2023</h4></span>
+
+          <img class="play-button" src="img/play-button.jpg" alt="play-button">
+
+          <div class="overlay">
+            <span class="imdbRatingPlugin" data-user="ur160114602" data-title="tt5433140" data-style="p1">
+              <a href="https://www.imdb.com/title/tt5433140/?ref_=plg_rt_1" target="_blank">
+                <img src="https://ia.media-imdb.com/images/G/01/imdb/plugins/rating/images/imdb_46x22.png" alt="PAW Patrol: The Mighty Movie (2023) on IMDb" />
+              </a>
+            </span>
+        
+            <button class="nwatch">
+              Watch
+            </button>
+          </div>
+        </div>
+        <!-- Joker ------------------------------------------------------------->
+        <div class="image">
+
+          <span class="year"><h4>2019</h4></span>
+
+          <img class="play-button" src="img/play-button.jpg" alt="play-button">
+
+          <div class="overlay">
+            <span class="imdbRatingPlugin" data-user="ur160114602" data-title="tt7286456" data-style="p1">
+              <a href="https://www.imdb.com/title/tt7286456/?ref_=plg_rt_1" target="_blank">
+                <img src="https://ia.media-imdb.com/images/G/01/imdb/plugins/rating/images/imdb_46x22.png" alt="PAW Patrol: The Mighty Movie (2023) on IMDb" />
+              </a>
+            </span>
+        
+            <button class="nwatch">
+              Watch
+            </button>
+          </div>
+        </div>
+        <!-- The Marsh King's Daughter ---------------------------------------------------------------------->
+        <div class="image">
+
+          <span class="year"><h4>2023</h4></span>
+
+          <img class="play-button" src="img/play-button.jpg" alt="play-button">
+
+          <div class="overlay">
+            <span class="imdbRatingPlugin" data-user="ur160114602" data-title="tt8002382" data-style="p1">
+              <a href="https://www.imdb.com/title/tt8002382/?ref_=plg_rt_1" target="_blank">
+                <img src="https://ia.media-imdb.com/images/G/01/imdb/plugins/rating/images/imdb_46x22.png" alt="PAW Patrol: The Mighty Movie (2023) on IMDb" />
+              </a>
+            </span>
+        
+            <button class="nwatch">
+              Watch
+            </button>
+          </div>
+        </div>
+        <!-- 101 Dalmatians----------------------------------------------------------->
+        <div class="image">
+
+          <span class="year"><h4>1996</h4></span>
+
+          <img class="play-button" src="img/play-button.jpg" alt="play-button">
+
+          <div class="overlay">
+            <span class="imdbRatingPlugin" data-user="ur160114602" data-title="tt0115433" data-style="p1">
+              <a href="https://www.imdb.com/title/tt0115433/?ref_=plg_rt_1" target="_blank">
+                <img src="https://ia.media-imdb.com/images/G/01/imdb/plugins/rating/images/imdb_46x22.png" alt="PAW Patrol: The Mighty Movie (2023) on IMDb" />
+              </a>
+            </span>
+
+        
+            <button class="nwatch">
+              Watch
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr>
+    <!-- wrapper3 start ----------------------------------------------->
+    <div class="wrapper3">
+      <div class="infoContainer1">
+        <img class="lg" src="img/Channel-Popcorn-Logo.png">
+
+        <div class="iconBox">
+          <h4 class="followText">Follow us on</h4>
+          <i class='bx bxl-facebook-square' style="color: #fff;" ></i>
+          <i class='bx bxl-instagram' style="color: #fff;" ></i>
+          <i class='bx bxl-youtube' style="color: #fff;" ></i>
+          <i class='bx bxl-twitter' style="color: #fff;" ></i>
+          <i class='bx bxl-tiktok' style="color: #fff;" ></i>
+        </div>
+      </div>
+      <div class="infoContainer2">
+        <h4>Action</h4>
+        <h4>Adventure</h4>
+        <h4>Comedy</h4>
+        <h4>Crime </h4>
+        <h4>Fantasy</h4>
+      </div>
+      <div class="infoContainer3">
+        <h4>Historical</h4>
+        <h4>Horror</h4>
+        <h4>Romance</h4>
+        <h4>Thriller </h4>
+        <h4>Drama</h4>
+      </div>
+      <div class="infoContainer4">
+        <h4>Science fiction</h4>
+        <h4>Documentary</h4>
+        <h4>Sports</h4>
+        <h4>Mystery </h4>
+        <h4>Musicals</h4>
+      </div>
+      <div class="infoContainer5">
+        <h3>Watch Unlimited Movie in one place</h3>
+        <div style="
+          width: 300px;
+          display: flex;
+          margin-top: 20px;
+        ">
+          <input type="email" placeholder="Enter Your Email" class="bt-email-box" required>
+          <button class="subut">Sign in</button>
+          <div class="watermark">
+            <p>Privacy Policy</p>
+            <p>©2023 Channel Popcorn</p>
+            <p>All right reserved</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <script>
+    (function(d,s,id){var js,stags=d.getElementsByTagName(s)[0];
+      if(d.getElementById(id)){return;}
+      js=d.createElement(s);
+      js.id=id;js.src="https://ia.media-imdb.com/images/G/01/imdb/plugins/rating/js/rating.js";
+      stags.parentNode.insertBefore(js,stags);
+    })(document,"script","imdb-rating-api");
+
+
+    const signIn = document.querySelector('#sign-in-button')
+    const signIn2 = document.querySelector('#wp1-sg-but')
+    const signIn3 = document.querySelector('.subut')
+    const back = document.querySelector('.cross')
+    const dropDownMenu = document.querySelector('.sign_up_box')
+
+    signIn.onclick = function () {
+      dropDownMenu.classList.toggle('open')
+    }
+
+    signIn2.onclick = function () {
+      dropDownMenu.classList.toggle('open')
+    }
+
+    signIn3.onclick = function () {
+      dropDownMenu.classList.toggle('open')
+    }
+
+    back.onclick = function () {
+      dropDownMenu.classList.toggle('open')
+    }
+    
+
+    const shpw = document.querySelector('#eye');
+    const password = document.querySelector('#myInput');
+
+    shpw.onclick = function () {
+      if ( password.type === "password") {
+          password.type = "text";
+          shpw.style.color = 'black';
+      } else {
+        password.type = "password";
+        shpw.style.color = 'white';
+      }
+    }
+  </script>
+</body>
+</html>
